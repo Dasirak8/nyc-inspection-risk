@@ -1,0 +1,14 @@
+{
+  "raw_rows": 295671,
+  "invalid_or_outside_rows": 85356,
+  "sentinel_rows": 4085,
+  "unparseable_date_rows": 0,
+  "missing_score_rows_in_window": 10007,
+  "duplicate_rows": 123,
+  "unrecognized_action_rows": 0,
+  "ambiguous_initial_days": 0,
+  "recognized_history_rows": 210192,
+  "history_days": 60338,
+  "labeled_routine_days": 33715,
+  "routine_closures_all_dates": 454
+}

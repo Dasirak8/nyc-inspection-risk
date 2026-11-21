@@ -1,0 +1,93 @@
+{
+  "selected": "history_rule",
+  "family_winners": {
+    "logit": "logit_C0.01",
+    "boost": "boost_L15_R10.0"
+  },
+  "train_n": 18222,
+  "train_last_date": "2025-12-08",
+  "feature_lag_days": 28,
+  "budget": 0.2,
+  "fit_start": "2024-07-01",
+  "holdout": [
+    "2026-01-05",
+    "2026-06-29"
+  ],
+  "candidates": [
+    {
+      "name": "logit_C0.01",
+      "family": "logit",
+      "params": {
+        "C": 0.01
+      }
+    },
+    {
+      "name": "logit_C0.1",
+      "family": "logit",
+      "params": {
+        "C": 0.1
+      }
+    },
+    {
+      "name": "logit_C1.0",
+      "family": "logit",
+      "params": {
+        "C": 1.0
+      }
+    },
+    {
+      "name": "boost_L7_R1.0",
+      "family": "boost",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 1.0
+      }
+    },
+    {
+      "name": "boost_L7_R10.0",
+      "family": "boost",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10.0
+      }
+    },
+    {
+      "name": "boost_L15_R1.0",
+      "family": "boost",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0
+      }
+    },
+    {
+      "name": "boost_L15_R10.0",
+      "family": "boost",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10.0
+      }
+    }
+  ],
+  "capture_intervals": [
+    {
+      "model": "logit_C0.01",
+      "versus": "history_rule",
+      "difference": -3,
+      "low": -10.0,
+      "high": 3.0,
+      "weeks": 25,
+      "block_weeks": 4,
+      "replicates": 2000
+    },
+    {
+      "model": "boost_L15_R10.0",
+      "versus": "history_rule",
+      "difference": -11,
+      "low": -18.0,
+      "high": -4.0,
+      "weeks": 25,
+      "block_weeks": 4,
+      "replicates": 2000
+    }
+  ]
+}

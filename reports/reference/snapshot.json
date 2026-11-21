@@ -1,0 +1,9 @@
+{
+  "source_url": "https://data.cityofnewyork.us/resource/43nn-pn8j.csv?%24select=camis%2Cinspection_date%2Cinspection_type%2Caction%2Cviolation_code%2Ccritical_flag%2Cscore%2Cboro%2Crecord_date&%24order=%3Aid&%24limit=500000",
+  "sha256": "9f5eac7a0276331f1a120aea52b487acf2ea21378974187c63a58b74693e6795",
+  "rows": 295671,
+  "bytes": 56237697,
+  "record_date_min": "2026-11-20T06:00:28",
+  "record_date_max": "2026-11-20T06:00:33",
+  "fetched_at_utc": "2026-11-21T01:42:22+00:00"
+}
